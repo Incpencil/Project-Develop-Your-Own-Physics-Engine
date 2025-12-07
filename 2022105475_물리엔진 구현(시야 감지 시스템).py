@@ -228,14 +228,14 @@ while not done:
     
     # A 키: 왼쪽(반시계 방향) 회전
     if a_p:
-        theta = 0.05
+        theta = -0.05
         playerViewVector = rotation(playerViewVector[0],playerViewVector[1],theta)
         dir1 = rotation(dir1[0],dir1[1],theta)
         dir2 = rotation(dir2[0],dir2[1],theta)
     
     # D 키: 오른쪽(시계 방향) 회전
     if d_p:
-        theta = -0.05
+        theta = 0.05
         playerViewVector = rotation(playerViewVector[0],playerViewVector[1],theta)
         dir1 = rotation(dir1[0],dir1[1],theta)
         dir2 = rotation(dir2[0],dir2[1],theta)
